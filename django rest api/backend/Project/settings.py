@@ -39,7 +39,7 @@ DJANGO_APPS = [
 ]
 
 CREATED_APPS = [
-    'core',
+    'apps.core',
 ]
 
 THIRD_PARTY_APPS=[
