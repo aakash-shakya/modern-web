@@ -15,13 +15,29 @@ const Fetchdata=()=>{
 
     return(
         <div>
-        {
-        data?.map((item)=>
-        <ul>
-            <li>{item.product}</li>
-        </ul>
-            )
-        }
+            <div className="table-center">
+                <table border='1' className='table'>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Product</th>
+                            <th>Sale</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+            { data?.map((item)=>
+                    <tbody>
+                        <tr>
+                            <td key={item.id}>{item.year}</td>
+                            <td>{item.product}</td>
+                            <td>{item.sale}</td>
+                            <td>{item.country}</td>
+                        </tr>
+                    </tbody>
+        
+                )}
+                </table>
+            </div>
         </div>
     )
 }
