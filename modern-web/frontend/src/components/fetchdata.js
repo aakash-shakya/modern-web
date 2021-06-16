@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-const Fetchdata=()=>{
+const Fetchdata= () =>{
     const [data, setData] = useState(null);
     const url = "http://localhost:8000";
     
@@ -15,9 +15,10 @@ const Fetchdata=()=>{
 
     return(
         <div>
-            <div className="table-center">
-                <table border='1' className='table'>
-                    <thead>
+            <div className="container">
+                <div className="tableFixHead">
+                <table className="table table-striped table-light table-bordered">
+                    <thead className="table-dark">
                         <tr>
                             <th>Year</th>
                             <th>Product</th>
@@ -37,6 +38,7 @@ const Fetchdata=()=>{
         
                 )}
                 </table>
+            </div>
             </div>
         </div>
     )

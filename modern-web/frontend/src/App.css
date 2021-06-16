@@ -2,12 +2,10 @@
   text-align: center;
 }
 
-.table-center{
-  width: 300px;
-  margin: auto;
-}
+.tableFixHead{
+   overflow: auto; height: 100vh; 
+  }
 
-.table{
-  text-align: center;
-  width:500px;
-}
+.tableFixHead thead tr th { 
+  position: sticky; top: 0; z-index: 1;
+ }
