@@ -11,3 +11,11 @@ class Data(models.Model):
 
     def __str__(self):
         return self.product
+
+
+class PostData(models.Model):
+    title = models.CharField(max_length=50)
+    body = models.TextField(max_length=500)
+
+    def __str__(self) -> str:
+        return self.title
